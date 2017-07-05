@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+游戏难度：
+<select id="mode">
+  <!--
+    如果想要拿到选中的 option 中的自定义属性：先获取选中项，然后再获取该项的自定义属性
+    select 是一个表单控件，它具有一个 value 值，默认你直接获取 select 的 value 就是你选中的 option 的 value
+   -->
+  <option value="1000" data-mode="1000">简单模式</option>
+  <option value="500" data-mode="500">正常模式</option>
+  <option value="200" data-mode="200">困难模式</option>
+</select>
+<button id="btn_start">开始游戏</button>
+<div class="canvas" id="canvas"></div>
+<script src="vendor/jquery-3.2.1.js"></script>
+<script src="vendor/underscore.js"></script>
+<script src="js/pixel-block.js"></script>
+<script src="js/food.js"></script>
+<script src="js/snake.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
